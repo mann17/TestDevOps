@@ -51,4 +51,7 @@ public class MathsFunctionsService {
         }
     }
 
+    public Integer getHighestPrimeNumber(Integer number) {
+        return null;
+    }
 }

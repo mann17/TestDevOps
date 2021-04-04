@@ -30,6 +30,13 @@ public class MathFunctionsController {
         return ResponseEntity.ok(mathsFunctionsService.isPrimeNumber(number));
     }
 
+    @GetMapping("/highestPrimeNumber")
+    public ResponseEntity<Integer> getHighestPrimeNumber(Integer number) {
+        log.info("Checking even-odd for: {}", number);
+
+        return ResponseEntity.ok(mathsFunctionsService.getHighestPrimeNumber(number));
+    }
+
     @GetMapping("/getFactorial")
     public ResponseEntity<Integer> getFactorial(Integer number) {
         log.info("Calculating factorial value for: {}", number);
