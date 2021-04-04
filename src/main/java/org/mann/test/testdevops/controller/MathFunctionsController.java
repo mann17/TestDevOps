@@ -23,4 +23,11 @@ public class MathFunctionsController {
         return ResponseEntity.ok(mathsFunctionsService.isEvenOddNumber(number));
     }
 
+    @GetMapping("/isPrime")
+    public ResponseEntity<String> isPrimeNumber(Integer number) {
+        log.info("Checking even-odd for: {}", number);
+
+        return ResponseEntity.ok(mathsFunctionsService.isPrimeNumber(number));
+    }
+
 }
