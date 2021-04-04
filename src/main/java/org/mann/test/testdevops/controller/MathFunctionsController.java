@@ -44,4 +44,11 @@ public class MathFunctionsController {
         return ResponseEntity.ok(mathsFunctionsService.getFactorial(number));
     }
 
+    @GetMapping("getReversedString")
+    public ResponseEntity<String> getReversedString(String string) {
+        log.info("Evaluating reversed value for: {}", string);
+
+        return ResponseEntity.ok(mathsFunctionsService.getReversedString(string));
+    }
+
 }
