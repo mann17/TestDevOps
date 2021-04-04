@@ -32,7 +32,7 @@ public class MathFunctionsController {
 
     @GetMapping("/highestPrimeNumber")
     public ResponseEntity<Integer> getHighestPrimeNumber(Integer number) {
-        log.info("Checking even-odd for: {}", number);
+        log.info("Checking highest prime number for: {}", number);
 
         return ResponseEntity.ok(mathsFunctionsService.getHighestPrimeNumber(number));
     }

@@ -37,7 +37,7 @@ public class MathsFunctionsService {
     private boolean checkIfPrimeNumber(Integer number) {
         for (int i = 2; i < number; i++) {
             if (number % i == 0) {
-                log.info("Number <{}> is divisible by <{}> hence not a prime number", number, i);
+                log.debug("Number <{}> is divisible by <{}> hence not a prime number", number, i);
 
                 return false;
             }
@@ -79,6 +79,7 @@ public class MathsFunctionsService {
     }
 
     public String getReversedString(String string) {
+        log.debug("getReversedString for:{}", string);
         if (string == null || string.length() == 0) {
             return "Invalid string provided";
         }
