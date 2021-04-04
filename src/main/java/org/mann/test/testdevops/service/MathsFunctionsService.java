@@ -39,4 +39,16 @@ public class MathsFunctionsService {
         return message;
     }
 
+    public Integer getFactorial(Integer number) {
+        if( number <= 0) {
+            return 0;
+        }
+
+        if (number == 1) {
+            return 1;
+        } else {
+            return number * getFactorial(number - 1);
+        }
+    }
+
 }

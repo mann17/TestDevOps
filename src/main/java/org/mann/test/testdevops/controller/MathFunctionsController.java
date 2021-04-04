@@ -30,4 +30,11 @@ public class MathFunctionsController {
         return ResponseEntity.ok(mathsFunctionsService.isPrimeNumber(number));
     }
 
+    @GetMapping("/getFactorial")
+    public ResponseEntity<Integer> getFactorial(Integer number) {
+        log.info("Calculating factorial value for: {}", number);
+
+        return ResponseEntity.ok(mathsFunctionsService.getFactorial(number));
+    }
+
 }
