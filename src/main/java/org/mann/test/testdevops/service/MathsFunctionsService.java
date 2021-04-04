@@ -8,9 +8,9 @@ public class MathsFunctionsService {
     public String isEvenOddNumber(Integer number) {
         String message;
         if (number % 2 == 0) {
-            message = "Number is Even";
+            message = String.format("Number %d is Even", number);
         } else {
-            message = "Number is Odd";
+            message = String.format("Number %d is Odd", number);
         }
 
         return message;

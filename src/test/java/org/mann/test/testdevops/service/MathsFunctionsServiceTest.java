@@ -14,7 +14,7 @@ class MathsFunctionsServiceTest {
 
         String message = mathsFunctionsService.isEvenOddNumber(evenNumber);
 
-        assertEquals("Number is Even", message);
+        assertEquals("Number 20 is Even", message);
     }
 
     @Test
@@ -23,7 +23,7 @@ class MathsFunctionsServiceTest {
 
         String message = mathsFunctionsService.isEvenOddNumber(evenNumber);
 
-        assertEquals("Number is Odd", message);
+        assertEquals("Number 21 is Odd", message);
 
     }
 
