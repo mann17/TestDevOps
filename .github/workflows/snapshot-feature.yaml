@@ -39,4 +39,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: manngnit/testdevops:1.0
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/testdevops:1.0
