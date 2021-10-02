@@ -1,0 +1,14 @@
+name: Feature branch workflow
+
+on:
+  push:
+    branches:
+      - feature/*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: say hello
+        run: echo "Hello Github Actions"
