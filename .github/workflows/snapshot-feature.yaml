@@ -15,6 +15,9 @@ jobs:
         
       - name: print Java version
         run: echo `java -version`
+        
+      - name: print Maven version
+        run: echo `mvn -version`
 
       - name: maven build
         run: mvn clean install
