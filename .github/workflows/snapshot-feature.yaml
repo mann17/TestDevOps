@@ -6,7 +6,7 @@ on:
       - feature/*
 
 jobs:
-  mybuild:
+  codebuild:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,3 +27,6 @@ jobs:
 
       - name: maven build
         run: mvn clean install
+
+      - name: print Docker version
+        run: echo `docker --version'
