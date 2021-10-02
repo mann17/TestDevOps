@@ -6,8 +6,10 @@ COPY .mvn .mvn
 COPY pom.xml .
 COPY src src
 
-RUN ./mvnw clean install
+RUN ./mvnw clean verify
 
-COPY target/*.jar app.jar
+RUN mv target/*.jar app.jar
+
+RUN mv target/app.jar /
 
 ENTRYPOINT ["java","-jar","/app.jar"]
