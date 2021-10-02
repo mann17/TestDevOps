@@ -31,17 +31,8 @@ jobs:
       - name: print Docker version
         run: echo `docker --version`
 
-      - name: print PWD
-        run: echo `pwd`
-
-      - name: print list of files
-        run: echo `ls -l`
-
-      - name: print list of files in target
-        run: echo `ls -l target/`
-
       - name: docker build
         run: docker build -t manngnit/testdevops .
 
-      - name: print list of files post
-        run: echo `ls -l`
+      - name: docker push
+        run: docker push manngnit/testdevops:latest
