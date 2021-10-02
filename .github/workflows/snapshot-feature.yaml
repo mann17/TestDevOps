@@ -32,4 +32,4 @@ jobs:
         run: echo `docker --version`
 
       - name: docker build
-      - run: docker build --build-arg JAR_FILE=build/libs/\*.jar -t manngnit/testdevops .
+        run: docker build --build-arg JAR_FILE=build/libs/\*.jar -t manngnit/testdevops .
