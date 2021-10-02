@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/checkout@v2
+        
+      - name: print Java version
+        run: echo 'java -version'
 
       - name: maven build
         run: mvn clean install
