@@ -6,7 +6,7 @@ on:
       - feature/*
 
 jobs:
-  build:
+  mybuild:
     runs-on: ubuntu-latest
 
     steps:
