@@ -10,6 +10,4 @@ RUN ./mvnw clean verify
 
 RUN mv target/*.jar app.jar
 
-RUN mv target/app.jar /
-
 ENTRYPOINT ["java","-jar","/app.jar"]
