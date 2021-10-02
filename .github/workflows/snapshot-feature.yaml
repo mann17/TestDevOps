@@ -34,5 +34,11 @@ jobs:
       - name: print PWD
         run: echo `pwd`
 
+      - name: print list of files
+        run: echo `ls -l`
+
+      - name: print list of files in target
+        run: echo `ls -l target/`
+
 #      - name: docker build
 #        run: docker build --build-arg JAR_FILE=build/libs/\*.jar -t manngnit/testdevops .
