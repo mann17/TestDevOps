@@ -6,7 +6,7 @@ COPY .mvn .mvn
 COPY pom.xml .
 COPY src src
 
-RUN ./mvnw clean verify
+RUN ./mvnw clean install
 
 COPY target/*.jar app.jar
 
