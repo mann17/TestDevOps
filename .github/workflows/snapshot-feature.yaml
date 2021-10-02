@@ -10,5 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: say hello
-        run: echo "Hello Github Actions"
+      - name: checkout code
+        uses: actions/checkout@v2
+
+      - name: maven build
+        run: mvn clean install
