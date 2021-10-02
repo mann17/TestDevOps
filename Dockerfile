@@ -8,6 +8,6 @@ COPY src src
 
 RUN ./mvnw clean verify
 
-RUN mv target/*.jar app.jar
+RUN mv target/testdevops-*.jar /app.jar
 
 ENTRYPOINT ["java","-jar","/app.jar"]
