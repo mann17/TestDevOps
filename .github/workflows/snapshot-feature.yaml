@@ -16,14 +16,14 @@ jobs:
       - name: print Java version
         run: echo `java -version`
 
-      - name: print Maven version
-        run: echo `mvn -version`
-
       - name: Setup Java JDK
         uses: actions/setup-java@v2.3.1
         with:
           java-version: '8'
           distribution: 'adopt'
+
+      - name: print Maven version
+        run: echo `mvn -version`
 
       - name: maven build
         run: mvn clean install
