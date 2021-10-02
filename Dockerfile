@@ -8,6 +8,6 @@ COPY src src
 
 RUN ./mvnw clean install
 
-COPY target/*.jar app.jar
+COPY /workspace/app/target/testdevops-0.0.1-SNAPSHOT.jar app.jar
 
 ENTRYPOINT ["java","-jar","/app.jar"]
