@@ -1,4 +1,4 @@
-name: Feature branch workflow
+name: Develop branch workflow
 
 on:
   pull_request:
