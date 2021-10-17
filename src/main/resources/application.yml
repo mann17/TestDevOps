@@ -1,0 +1,13 @@
+logging:
+  level:
+    org.mann.test=debug
+
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-store-type: pkcs12
+    key-store: classpath:testkeystoremann.p12
+    key-store-password: password
+    key-alias: testcertmann
+    key-password: password
