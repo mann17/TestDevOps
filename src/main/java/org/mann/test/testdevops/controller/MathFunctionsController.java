@@ -26,7 +26,7 @@ public class MathFunctionsController {
 
     @GetMapping("/isPrime")
     public ResponseEntity<String> isPrimeNumber(@RequestParam Integer number) {
-        log.info("Checking even-odd for: {}", number);
+        log.info("Checking if prime number for: {}", number);
 
         return ResponseEntity.ok(mathsFunctionsService.isPrimeNumber(number));
     }
@@ -38,14 +38,14 @@ public class MathFunctionsController {
         return ResponseEntity.ok(mathsFunctionsService.getHighestPrimeNumber(number));
     }
 
-    @GetMapping("/getFactorial")
+    @GetMapping("/factorial")
     public ResponseEntity<Integer> getFactorial(@RequestParam Integer number) {
         log.info("Calculating factorial value for: {}", number);
 
         return ResponseEntity.ok(mathsFunctionsService.getFactorial(number));
     }
 
-    @GetMapping("getReversedString")
+    @GetMapping("/reverseString")
     public ResponseEntity<String> getReversedString(@RequestParam String string) {
         log.info("Evaluating reversed value for: {}", string);
 

@@ -1,6 +1,6 @@
 logging:
   level:
-    org.mann.test=debug
+    org.mann.test: debug
 
 server:
   port: 8443
@@ -11,3 +11,8 @@ server:
     key-store-password: password
     key-alias: testcertmann
     key-password: password
+
+spring:
+  security:
+    user:
+      password: 80f1c81f-e9a7-4e6e-9b50-996b44d503c3
